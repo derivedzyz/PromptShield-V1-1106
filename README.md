@@ -47,7 +47,7 @@ PromptShield 是面向中英文客服和知识问答系统的提示词注入分�
 
 监督阶段使用公开提示词注入数据学习正常与攻击的区别，再通过中英文业务场景补充第三类标注。同一业务主题分别给出正常咨询、要求执行越权操作、引用越权操作进行审阅的请求，使标签随操作意图变化。[deepset 数据集](https://huggingface.co/datasets/deepset/prompt-injections) · [NeurAlchemy 数据集](https://huggingface.co/datasets/neuralchemy/Prompt-injection-dataset)
 
-递归阶段由已验收教师对未标注文本打分。训练器比较原始输入表示和遮蔽少量嵌入通道后的预测，用独立校准集为三类分别选择准入门槛。通过筛选的样本携带三类软标签，权重取决于置信度与两次预测的差异。同一工单及其改写共用来源组号，续训时据此剔除教师已经使用的文档。学生与只用带标签样本的对照组共享监督批次，晋级后才作为下一代教师。[训练说明](https://github.com/derivedzyz/PromptShield-V1-1106/blob/v1-1106-focus1/training/recursive/TRAINING.md) · [方法与论文](https://github.com/derivedzyz/PromptShield-V1-1106/blob/v1-1106-focus1/training/recursive/RESEARCH-1106.md)
+递归阶段由已验收教师对未标注文本打分。训练器比较原始输入表示和遮蔽少量嵌入通道后的预测，用独立校准集为三类分别选择准入门槛。通过筛选的样本携带三类软标签，权重取决于置信度与两次预测的差异。同一工单及其改写共用来源组号，续训时据此剔除教师已经使用的文档。学生与只用带标签样本的对照组共享监督批次，晋级后才作为下一代教师。[训练说明](https://github.com/derivedzyz/PromptShield-V1-1106/blob/v1-1106-focus1/training/recursive/TRAINING.md) · [方法与论文](https://github.com/derivedzyz/PromptShield-V1-1106/blob/main/training/recursive/RESEARCH-1106.md)
 
 专项训练针对两类现象：上轮实验权重在 deepset 少答对一条，部分业务审阅请求被当作直接攻击。训练从正式教师出发，使用 497 条 deepset 训练锚点、256 条针对执行与审阅意图的训练样本，以及按类平衡的教师软标签。另取 deepset 训练划分中的 48 条作为本轮开发参考。开发验证发现部分直接攻击被降判为疑似，随后从训练锚点中选出标签分数下降较多的攻击进行复习。学生和监督对照成对训练、保存并回读；选定唯一候选后再运行公开测试。[专项训练方案](https://github.com/derivedzyz/PromptShield-V1-1106/blob/v1-1106-focus1/training/recursive/FOCUS-PROTOCOL.md) · [复习方案与执行记录](https://github.com/derivedzyz/PromptShield-V1-1106/blob/v1-1106-focus1/training/recursive/FOCUS-REPLAY.md)
 
