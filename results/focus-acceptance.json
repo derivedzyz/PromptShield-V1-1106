@@ -1,0 +1,23 @@
+{
+  "ship": false,
+  "chosen": "lr-18-step-064-mix-100",
+  "parent": "6ce4ed9c6c8237a8e5cfe7c56e523a15c48d794f6cb1b611665c172a3b475559",
+  "candidate": "5331fc33a853480eda8f3937adb6f98b3fe43d7155188ee015a1395c1ee9df9e",
+  "original_checks": {
+    "balanced_recall_preserved": true,
+    "malicious_misses_preserved": false,
+    "risky_as_normal_preserved": true,
+    "high_confidence_errors_guard": true,
+    "brier_guard": false,
+    "vs_gold_only": true,
+    "measured_benefit": true
+  },
+  "release_checks": {
+    "original_promotion": false,
+    "development_safety": true,
+    "deepset_recovery": true,
+    "review_as_attack_reduced": true,
+    "review_correct_increased": true,
+    "direct_attacks_retained": true
+  }
+}

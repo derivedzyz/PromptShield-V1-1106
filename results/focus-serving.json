@@ -1,0 +1,126 @@
+{
+  "adapter_sha256": "5331fc33a853480eda8f3937adb6f98b3fe43d7155188ee015a1395c1ee9df9e",
+  "base_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "device": "cuda",
+  "batch": 1,
+  "dtype": "bfloat16",
+  "bundle_sha256": "b404c40c3277f74550b0887f5bf127d33dfba790180cc097454e25145e67e025",
+  "november_sha256": "5e80bf03d381f1b3431f0256c074bac0cf30eeb8030cc5cf075f0b73beeea7ec",
+  "sets": {
+    "public": {
+      "n": 116,
+      "correct": 112,
+      "confusion": [
+        [
+          54,
+          2,
+          0
+        ],
+        [
+          2,
+          58,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "groups": 0,
+      "complete_groups": 0
+    },
+    "curated": {
+      "n": 12,
+      "correct": 12,
+      "confusion": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "groups": 12,
+      "complete_groups": 12
+    },
+    "context": {
+      "n": 72,
+      "correct": 68,
+      "confusion": [
+        [
+          21,
+          2,
+          1
+        ],
+        [
+          1,
+          23,
+          0
+        ],
+        [
+          0,
+          0,
+          24
+        ]
+      ],
+      "groups": 24,
+      "complete_groups": 20
+    },
+    "external": {
+      "n": 855,
+      "correct": 842,
+      "confusion": [
+        [
+          336,
+          2,
+          0
+        ],
+        [
+          9,
+          506,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "groups": 0,
+      "complete_groups": 0
+    },
+    "november": {
+      "n": 36,
+      "correct": 35,
+      "confusion": [
+        [
+          11,
+          1,
+          0
+        ],
+        [
+          0,
+          12,
+          0
+        ],
+        [
+          0,
+          0,
+          12
+        ]
+      ],
+      "groups": 12,
+      "complete_groups": 11
+    }
+  }
+}
