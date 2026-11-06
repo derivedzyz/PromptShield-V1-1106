@@ -16,6 +16,8 @@
   "max_tokens": 256,
   "sha256": "6ce4ed9c6c8237a8e5cfe7c56e523a15c48d794f6cb1b611665c172a3b475559",
   "parent_sha256": "3738854f8597ce428b3da535c94659abc3f5e6484ae06a456a1726e8033ae69c",
-  "role": "experimental student",
-  "tensors_verified": true
+  "role": "retained accepted teacher from 1105",
+  "tensors_verified": true,
+  "release": "PromptShield-V1-1106",
+  "source_groups_sha256": "5cc6ddfed769ea0de572067cac12bf4860e235e96e8e7a7db4dc5b0969274279"
 }

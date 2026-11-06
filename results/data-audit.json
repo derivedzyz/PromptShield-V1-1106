@@ -1,0 +1,48 @@
+{
+  "november_sha256": "5e80bf03d381f1b3431f0256c074bac0cf30eeb8030cc5cf075f0b73beeea7ec",
+  "november_rows": 36,
+  "overlaps_previous_data": 0,
+  "inherited_source_groups": 96,
+  "runs": {
+    "recursive-1106-314160": [
+      {
+        "examined": 1024,
+        "accepted_samples": 96,
+        "source_groups_repeated": 0,
+        "weights_min": 0.0012065657306245033,
+        "mean_weight": 0.9671427753478927,
+        "max_view_tv": 0.0401049368083477
+      }
+    ],
+    "recursive-1106-271828": [
+      {
+        "examined": 1024,
+        "accepted_samples": 96,
+        "source_groups_repeated": 0,
+        "weights_min": 0.02824149768001879,
+        "mean_weight": 0.9669782864299074,
+        "max_view_tv": 0.04299319535493851
+      }
+    ],
+    "recursive-1106-contrast-314160": [
+      {
+        "examined": 1024,
+        "accepted_samples": 96,
+        "source_groups_repeated": 0,
+        "weights_min": 0.0012065657306245033,
+        "mean_weight": 0.9671427753478927,
+        "max_view_tv": 0.0401049368083477
+      }
+    ],
+    "recursive-1106-contrast-271828": [
+      {
+        "examined": 1024,
+        "accepted_samples": 96,
+        "source_groups_repeated": 0,
+        "weights_min": 0.02824149768001879,
+        "mean_weight": 0.9669782864299074,
+        "max_view_tv": 0.04299319535493851
+      }
+    ]
+  }
+}
